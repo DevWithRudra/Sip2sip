@@ -2,24 +2,24 @@
 <svg width="600" height="850" viewBox="0 0 600 850" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#f4f5ee"/>
-      <stop offset="100%" stop-color="#eef4f5"/>
+      <stop offset="0%" stop-color="#f6f7ee"/>
+      <stop offset="100%" stop-color="#f3ecdf"/>
     </linearGradient>
-    <linearGradient id="can" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#dfe9bb"/>
-      <stop offset="50%" stop-color="#f9faf4"/>
-      <stop offset="100%" stop-color="#eff3ee"/>
+    <linearGradient id="bottle" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e0ebc4"/>
+      <stop offset="50%" stop-color="#fafaf3"/>
+      <stop offset="100%" stop-color="#f2efe7"/>
     </linearGradient>
   </defs>
   <rect width="600" height="850" fill="url(#bg)"/>
-  <g opacity="0.72">
-    <circle cx="178" cy="620" r="110" fill="#e7edcc"/>
-    <circle cx="450" cy="220" r="96" fill="#f0f5d3"/>
+  <g opacity="0.7">
+    <circle cx="185" cy="640" r="100" fill="#ebf1cd"/>
+    <circle cx="450" cy="220" r="94" fill="#f0f4d9"/>
   </g>
-  <g transform="translate(145 110)">
-    <rect x="90" y="90" width="180" height="430" rx="54" fill="url(#can)"/>
-    <rect x="90" y="52" width="180" height="62" rx="18" fill="#e7c879"/>
-    <rect x="126" y="188" width="108" height="152" rx="25" fill="rgba(255,255,255,0.48)"/>
-    <text x="180" y="268" text-anchor="middle" font-size="22" fill="#203922" font-family="Arial, sans-serif" font-weight="700">CITRUS</text>
+  <g transform="translate(150 112)">
+    <rect x="86" y="88" width="180" height="430" rx="54" fill="url(#bottle)"/>
+    <rect x="86" y="46" width="180" height="66" rx="20" fill="#e3c47c"/>
+    <rect x="120" y="212" width="112" height="120" rx="22" fill="rgba(255,255,255,0.52)"/>
+    <text x="176" y="282" text-anchor="middle" font-size="18" fill="#243c29" font-family="Arial, sans-serif" font-weight="700">NIMBU</text>
   </g>
 </svg>

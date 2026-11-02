@@ -1,32 +1,26 @@
-async function renderFaqPage() {
-  const faqRoot = document.getElementById("faq-accordion");
-  if (!faqRoot) return;
-
-  const faqItems = await window.Sip2SipApp.fetchFaq();
-
-  faqRoot.innerHTML = faqItems.map((item, index) => `
-    <div class="faq-item ${index === 0 ? "open" : ""}">
-      <button class="faq-question" type="button">
-        <span>${item.question}</span>
-        <span>+</span>
-      </button>
-      <div class="faq-answer">
-        <p>${item.answer}</p>
-      </div>
-    </div>
-  `).join("");
-
-  faqRoot.querySelectorAll(".faq-question").forEach((button) => {
-    button.addEventListener("click", () => {
-      const parent = button.closest(".faq-item");
-      const isOpen = parent.classList.contains("open");
-
-      faqRoot.querySelectorAll(".faq-item").forEach((item) => item.classList.remove("open"));
-      if (!isOpen) parent.classList.add("open");
-    });
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  renderFaqPage();
-});
+[
+  {
+    "question": "What is Sip2Sip?",
+    "answer": "Sip2Sip is a refreshing digestive drink brand built for comfort, freshness and everyday wellness with zero sugar."
+  },
+  {
+    "question": "Do you offer sugar-free blends?",
+    "answer": "Yes. All Sip2Sip digestive blends are designed to be sugar-free, light and easy on the stomach."
+  },
+  {
+    "question": "Are there any side effects?",
+    "answer": "Sip2Sip is made with a clean formula and no side-effect-heavy approach in mind, focusing on gentle digestive comfort."
+  },
+  {
+    "question": "Which flavors are available?",
+    "answer": "We currently offer Lahori Jeera, Mint Tulsi, Nimbu Pudina and Aam Masala."
+  },
+  {
+    "question": "How should I enjoy Sip2Sip?",
+    "answer": "Enjoy one can chilled, especially after a meal or whenever you want a light, refreshing digestive reset."
+  },
+  {
+    "question": "Can I order online?",
+    "answer": "Yes, all blends are available directly through this storefront and delivered with ease."
+  }
+]

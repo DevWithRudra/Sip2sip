@@ -3,18 +3,19 @@
 }
 
 :root {
-  --bg: #f4f9f3;
-  --bg-strong: #e6f3e9;
-  --panel: #ffffff;
-  --panel-alt: #f3f9f4;
-  --primary: #1d7d4d;
-  --primary-deep: #135837;
-  --primary-soft: #e6f4eb;
-  --accent: #f0c867;
-  --text: #16251b;
-  --muted: #5d6d62;
-  --line: rgba(22, 37, 27, 0.09);
-  --shadow: 0 20px 45px rgba(13, 39, 23, 0.08);
+  --bg: #f7f1e8;
+  --bg-strong: #efe1c9;
+  --panel: #fffdf9;
+  --panel-alt: #f6efe6;
+  --primary: #2f7d56;
+  --primary-deep: #1b5f3f;
+  --primary-soft: #edf8ee;
+  --accent: #d7a75b;
+  --accent-soft: #f3ddaf;
+  --text: #1d261f;
+  --muted: #5d665d;
+  --line: rgba(29, 38, 31, 0.09);
+  --shadow: 0 20px 45px rgba(28, 70, 48, 0.08);
   --radius: 28px;
   --radius-sm: 16px;
 }
@@ -179,7 +180,7 @@ p {
   height: 42px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--primary), #57b57b);
+  background: linear-gradient(135deg, var(--primary), #67b778);
   border-radius: 12px;
   color: white;
   box-shadow: var(--shadow);
@@ -281,7 +282,7 @@ p {
 .hero-inner {
   display: grid;
   grid-template-columns: 1.12fr 0.88fr;
-  background: linear-gradient(135deg, #dfeee4, #eff7f1 30%, #f8f3ed 100%);
+  background: linear-gradient(135deg, #e6f2e6, #f8f0e5 30%, #f5efe4 100%);
   border-radius: 34px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -373,7 +374,7 @@ p {
   position: relative;
   width: 200px;
   height: 270px;
-  background: linear-gradient(180deg, #d7ead8, #f4faf4 38%, #f5f3f0 100%);
+  background: linear-gradient(180deg, #d7ead8, #f3f6f1 38%, #f6efe8 100%);
   border-radius: 34px 34px 42px 42px;
   box-shadow: inset -18px -18px 22px rgba(18, 43, 29, 0.08), 0 26px 34px rgba(15, 42, 25, 0.12);
   z-index: 2;
@@ -432,7 +433,7 @@ p {
   grid-template-columns: 1.1fr 0.9fr;
   border-radius: 34px;
   overflow: hidden;
-  background: linear-gradient(135deg, #1a2d22, #254d35);
+  background: linear-gradient(135deg, #1d3828, #225539);
   box-shadow: var(--shadow);
 }
 
@@ -450,7 +451,7 @@ p {
 .promo-visual {
   position: relative;
   min-height: 260px;
-  background: linear-gradient(120deg, rgba(240, 200, 103, 0.2), rgba(255, 255, 255, 0.06));
+  background: linear-gradient(120deg, rgba(215, 167, 91, 0.4), rgba(255, 255, 255, 0.06));
 }
 
 .promo-bottle {
@@ -546,7 +547,7 @@ p {
 
 .product-media {
   position: relative;
-  background: linear-gradient(135deg, #ebf4ed, #f5f2ec);
+  background: linear-gradient(135deg, #ebf7ed, #f5efe5);
   height: 235px;
   display: grid;
   place-items: center;
