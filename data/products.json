@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "name": "Sip2Sip Original",
+    "slug": "sip2sip-original",
+    "flavor": "Original",
+    "price": 99,
+    "rating": 4.8,
+    "reviews": 124,
+    "category": "Energy Drink",
+    "image": "assets/images/products/original.svg",
+    "description": "A refreshing energy drink created for everyday momentum.",
+    "featured": true,
+    "ingredients": ["Water", "Natural caffeine", "Electrolytes", "B Vitamins", "Citrus extract"],
+    "nutrition": {
+      "caffeine": "160 mg",
+      "serving": "330 ml",
+      "sugar": "0 g",
+      "calories": "25 kcal"
+    },
+    "benefits": [
+      "Smooth energy support",
+      "Light and refreshing taste",
+      "Easy daily routine companion"
+    ],
+    "faq": [
+      "Great for morning focus and mid-day momentum.",
+      "Best served chilled for the cleanest taste profile."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Sip2Sip Berry Blast",
+    "slug": "sip2sip-berry-blast",
+    "flavor": "Berry Blast",
+    "price": 109,
+    "rating": 4.9,
+    "reviews": 188,
+    "category": "Energy Drink",
+    "image": "assets/images/products/berry-blast.svg",
+    "description": "A vibrant berry-forward energy drink with a bright finish and clean lift.",
+    "featured": true,
+    "ingredients": ["Water", "Berry blend", "Caffeine", "Vitamin B6", "Natural flavoring"],
+    "nutrition": {
+      "caffeine": "160 mg",
+      "serving": "330 ml",
+      "sugar": "0 g",
+      "calories": "30 kcal"
+    },
+    "benefits": [
+      "Signature berry profile",
+      "Clean finish with no heavy aftertaste",
+      "Daily energy with style"
+    ],
+    "faq": [
+      "A favorite for focused work blocks and active routines.",
+      "Balanced flavor and a crisp finish."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sip2Sip Citrus Rush",
+    "slug": "sip2sip-citrus-rush",
+    "flavor": "Citrus Rush",
+    "price": 119,
+    "rating": 4.7,
+    "reviews": 142,
+    "category": "Energy Drink",
+    "image": "assets/images/products/citrus-rush.svg",
+    "description": "A crisp citrus blend designed to wake up your routine with bright, clean energy.",
+    "featured": true,
+    "ingredients": ["Water", "Citrus extracts", "Caffeine", "Magnesium", "B Vitamins"],
+    "nutrition": {
+      "caffeine": "160 mg",
+      "serving": "330 ml",
+      "sugar": "0 g",
+      "calories": "28 kcal"
+    },
+    "benefits": [
+      "Bright citrus punch",
+      "Natural everyday refreshment",
+      "Ideal for active mornings"
+    ],
+    "faq": [
+      "Pairs well with breakfast and workouts.",
+      "Fresh citrus flavor made for busy mornings."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sip2Sip Tropical Energy",
+    "slug": "sip2sip-tropical-energy",
+    "flavor": "Tropical Energy",
+    "price": 129,
+    "rating": 4.9,
+    "reviews": 210,
+    "category": "Energy Drink",
+    "image": "assets/images/products/tropical-energy.svg",
+    "description": "A tropical blend with full flavor and a smooth, lasting burst of motion.",
+    "featured": true,
+    "ingredients": ["Water", "Tropical fruit blend", "Caffeine", "Vitamin B12", "Electrolytes"],
+    "nutrition": {
+      "caffeine": "180 mg",
+      "serving": "330 ml",
+      "sugar": "0 g",
+      "calories": "32 kcal"
+    },
+    "benefits": [
+      "Longer lasting energy curve",
+      "Tropical flavor with premium finish",
+      "Built for active days"
+    ],
+    "faq": [
+      "Best for post-workout recovery and long afternoons.",
+      "Smooth energy without an overly sugary profile."
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Sip2Sip for business inquiries, support and general questions." />
+    <title>Contact Sip2Sip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="page-hero section-shell">
+        <div class="container narrow">
+          <span class="section-kicker">Contact</span>
+          <h1>Get in touch</h1>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container contact-layout">
+          <div class="contact-card">
+            <h2>Send a message</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <label class="field-group">
+                  <span>Name</span>
+                  <input type="text" name="name" required />
+                </label>
+                <label class="field-group">
+                  <span>Email</span>
+                  <input type="email" name="email" required />
+                </label>
+                <label class="field-group full-width">
+                  <span>Subject</span>
+                  <input type="text" name="subject" required />
+                </label>
+                <label class="field-group full-width">
+                  <span>Message</span>
+                  <textarea name="message" rows="6" required></textarea>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <aside class="info-panel">
+            <h3>Reach us</h3>
+            <ul class="info-list">
+              <li>Email: hello@sip2sip.com</li>
+              <li>Phone: +91 98765 43210</li>
+              <li>Instagram: @sip2sip</li>
+              <li>LinkedIn: Sip2Sip</li>
+            </ul>
+            <div class="info-block">
+              <h4>Business information</h4>
+              <p>Sip2Sip Energy Labs Pvt. Ltd.<br />Bengaluru, India</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

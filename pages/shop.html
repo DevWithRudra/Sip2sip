@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop Sip2Sip energy drinks with bold flavors and premium ingredients built for everyday momentum."
+    />
+    <title>Shop Sip2Sip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="page-hero section-shell">
+        <div class="container narrow">
+          <span class="section-kicker">Shop collection</span>
+          <h1>Shop Sip2Sip</h1>
+          <p>Choose your next boost.</p>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="shop-layout">
+            <aside class="filter-panel">
+              <div class="filter-group">
+                <h4>Search</h4>
+                <input id="shop-search" class="field-input" type="search" placeholder="Search products" />
+              </div>
+
+              <div class="filter-group">
+                <h4>Category</h4>
+                <div id="category-filter" class="chip-list"></div>
+              </div>
+
+              <div class="filter-group">
+                <h4>Flavor</h4>
+                <div id="flavor-filter" class="chip-list"></div>
+              </div>
+
+              <div class="filter-group">
+                <h4>Sort</h4>
+                <select id="sort-select" class="field-input">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Top Rated</option>
+                  <option value="newest">Newest</option>
+                </select>
+              </div>
+            </aside>
+
+            <div>
+              <div class="product-toolbar">
+                <div id="shop-results-count" class="muted-text">Showing 0 products</div>
+              </div>
+              <div id="shop-products" class="product-grid shop-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/shop.js"></script>
+  </body>
+</html>
