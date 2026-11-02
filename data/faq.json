@@ -1,26 +1,32 @@
-[
-  {
-    "question": "What is Sip2Sip?",
-    "answer": "Sip2Sip is a modern energy drink brand focused on clean energy, premium taste and everyday momentum."
-  },
-  {
-    "question": "What flavors are available?",
-    "answer": "We currently offer Original, Berry Blast, Citrus Rush and Tropical Energy."
-  },
-  {
-    "question": "How should I consume Sip2Sip?",
-    "answer": "Enjoy one can chilled, ideally before or during your work, workout or busy day when you need a quick lift."
-  },
-  {
-    "question": "How long does delivery take?",
-    "answer": "Most deliveries are completed within 3 to 6 business days depending on your location."
-  },
-  {
-    "question": "Can I return an order?",
-    "answer": "Yes. We offer returns or replacements for damaged or incorrect orders as long as the request is raised within 7 days of delivery."
-  },
-  {
-    "question": "Where can I buy Sip2Sip?",
-    "answer": "You can shop directly on this website or find Sip2Sip at select premium retail partners near you."
-  }
-]
+async function renderFaqPage() {
+  const faqRoot = document.getElementById("faq-accordion");
+  if (!faqRoot) return;
+
+  const faqItems = await window.Sip2SipApp.fetchFaq();
+
+  faqRoot.innerHTML = faqItems.map((item, index) => `
+    <div class="faq-item ${index === 0 ? "open" : ""}">
+      <button class="faq-question" type="button">
+        <span>${item.question}</span>
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>${item.answer}</p>
+      </div>
+    </div>
+  `).join("");
+
+  faqRoot.querySelectorAll(".faq-question").forEach((button) => {
+    button.addEventListener("click", () => {
+      const parent = button.closest(".faq-item");
+      const isOpen = parent.classList.contains("open");
+
+      faqRoot.querySelectorAll(".faq-item").forEach((item) => item.classList.remove("open"));
+      if (!isOpen) parent.classList.add("open");
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderFaqPage();
+});
